@@ -3,8 +3,9 @@
     padding: 0;
     /* background-color:var(--light); */
     font-family: "TT Norms";
-    /* font-weight: 700;
-    letter-spacing: 0; */
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    color: #191919ff;
 }
 :root{
  --dark:#000000;
@@ -35,7 +36,7 @@
     font-weight: 700;
     src: url('https://typography.doordash.com/TTNorms-Bold.woff2') format('woff2'),url('https://typography.doordash.com/TTNorms-Bold.woff') format('woff'),url('https://typography.doordash.com/TTNorms-Bold.ttf') format('truetype'),url('https://typography.doordash.com/TTNorms-Bold.eot?#iefix') format('embedded-opentype');
 }
-@font-face {
+/* @font-face {
     font-family: 'DD-SourceSerifPro';
     font-style: normal;
     font-weight: 800;
@@ -130,7 +131,7 @@
     font-style: normal;
     font-weight: 100;
     src: url('https://typography.doordash.com/CaviarFonts/SQMarket-Thin.woff2') format('woff2'),url('https://typography.doordash.com/CaviarFonts/SQMarket-Thin.woff') format('woff'),url('https://typography.doordash.com/CaviarFonts/SQMarket-Thin.ttf') format('truetype'),url('https://typography.doordash.com/CaviarFonts/SQMarket-Thin.eot') format('embedded-opentype');
-}
+} */
 .ads{
     margin-top: 16px;
     display: block;
@@ -164,23 +165,23 @@
     grid-area: 2/2;
 }
 .ads-head{
-    color: #191919ff;
-    font-family: "TT Norms";
+    /* color: #191919ff; */
+    /* font-family: "TT Norms"; */
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 22px;
-    letter-spacing: -0.01px;
+    /* letter-spacing: -0.01px; */
     display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 .ads-para{
     color: #606060ff;
-    font-family: "TT Norms";
+    /* font-family: "TT Norms"; */
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: -0.01px;
+    /* letter-spacing: -0.01px; */
     display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -228,11 +229,11 @@
 }
 .ads-btn a span{
     color: var(--light);
-    font-family: "TT Norms";
+    /* font-family: "TT Norms"; */
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 22px;
-    letter-spacing: -0.01px;
+    /* letter-spacing: -0.01px; */
     display: block;  
     text-align: center;
 }
@@ -506,11 +507,19 @@
     display: flex;
     margin-top: 2px;
     justify-content: flex-start;
+    align-items: center;
 }
 .app-rate svg{
     margin-left: 2px;
     width: 12px;
     height: 12px;
+}
+.app-rate span{
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #606060ff;
 }
 .app-btn{
     margin-top: 16px;
@@ -535,11 +544,12 @@
     margin-block:40px;
     padding: 8px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    max-width: 100%;  
 }
 .ser-1{
     display: flex;
-    min-width: 360px;
+    min-width: 330px;
     padding: 16px;
 }
 .service-img{
