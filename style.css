@@ -766,10 +766,10 @@
     flex-direction: column;
     min-width: 90%;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 18px;
     height: auto;
-    height: 100%;
-    justify-content: space-between;
+    /* height: 100%; */
+    justify-content:flex-start;
     box-sizing: border-box;
 }
 .card-5-inner .card-1-txt-con{
@@ -977,12 +977,16 @@ footer{
     width: 100%;
     border-radius: 16px;
     align-items: center;
+    margin-top: 5px;
 }
 .f3-btn-inner svg{
     width: 24px;
     height: 24px;
     fill: rgb(25, 25, 25);
     margin-right: 8px;
+}
+#arrow{
+    margin: 0px 0 0 -8px;
 }
 .f3-btn-txt{
     display: flex;
